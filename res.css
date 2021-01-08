@@ -1,0 +1,41 @@
+@media screen and (max-width: 1200px) {
+  .main-bg {
+    background-size: 140vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-h {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .main-bg {
+    background-size: 150vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-h {
+    font-size: 40px;
+    margin-top: 30px !important ;
+  }
+  .main-sub{
+    font-size: 14px;
+  }
+  .main-bg {
+    background-size: 170vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .calc{
+    width: 95vw;
+  }
+  .main-h {
+    font-size: 25px;
+    margin-top: 20px !important;
+  }
+  .main-bg {
+    background-size: 180vw;
+  }
+}

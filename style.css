@@ -1,0 +1,210 @@
+:root {
+  --blue: #0f223e;
+  --red: #f11e25;
+}
+
+.txt-blue {
+  color: var(--blue);
+}
+.txt-red {
+  color: var(--red);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  height: 70px;
+  padding: 0 10%;
+  background: white;
+}
+.logo {
+  width: 130px;
+}
+.call {
+  height: 55px;
+  width: 190px;
+  border-radius: 20px;
+  background: var(--blue);
+  padding: 10px;
+}
+.icn-wrp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: brightness(1);
+  background: rgb(65, 81, 129);
+  display: inline-block;
+}
+.icn-wrp img {
+  width: 20px;
+  height: 20px;
+}
+.call a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.main-bg {
+  background-size: 150vw;
+  background-image: url(./img/shape.svg);
+  background-repeat: no-repeat;
+}
+.red-bg {
+  background: var(--red);
+  width: 100%;
+  height: 100px;
+}
+.main-h {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+.main-sub {
+  font-size: 18px;
+  color: #3e0202;
+}
+.calc {
+  width: 550px;
+  background: var(--blue);
+  border-radius: 15px;
+}
+.h-img-wrp {
+  background: url(./img/mom.jpg);
+  background-size: 619.9px;
+  background-position: -112px -40px;
+  height: 350px;
+  width: 350px;
+  background-repeat: no-repeat;
+  border-radius: 80px;
+  transform: rotate(8deg);
+  border: 8px solid var(--blue);
+  box-shadow: 0px 0px 15px 0px #00000052;
+}
+.rating {
+  margin: 20px;
+}
+.rating span {
+  font-weight: 500;
+  color: rgb(255, 208, 0);
+}
+.rating .star {
+  height: 18px;
+}
+.slide-item {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 350px;
+  box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 40px;
+  transition: 0.5s;
+}
+.slide-item:hover {
+  transform: scale(1.1);
+}
+.rat .g {
+  width: 70px;
+  height: 70px;
+}
+.rat .s {
+  height: 30px;
+}
+.g-logo {
+  width: 50px;
+  height: 50px;
+}
+.g-star {
+  height: 40px;
+}
+.review-text {
+  min-height: 170px;
+  font-weight: 100;
+  color: gray;
+}
+.splide__slide {
+  padding: 20px;
+}
+.feature {
+  width: 200px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.feature .img-wrp {
+  border-radius: 20px;
+  padding: 15px;
+  border: 4px solid var(--blue);
+}
+.feature .img-wrp img {
+  width: 55px;
+  filter: saturate(0.5);
+}
+.step .num {
+  box-shadow: 0px 0px 6px black;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border: 3px solid white;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+}
+.step .line {
+  box-shadow: 0px 0px 4px black;
+  width: 100px;
+  height: 3px;
+  background: white;
+  display: inline-block;
+}
+.step.active .num {
+  background: var(--red) !important;
+  border-color: var(--red);
+  color: white;
+}
+.step.active .line {
+  background: var(--red) !important;
+}
+
+.form-check-input:checked {
+  background: var(--red);
+  border-color: var(--red);
+}
+.btn-red {
+  background: var(--red);
+  color: white;
+}
+.before-card {
+  background: var(--blue);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 14px -4px darkgrey;
+  height: 250px;
+  padding: 25px;
+  width: 310px;
+  display: inline-block;
+}
+.before-card .icn {
+  width: 22px;
+  margin-right: 10px;
+}
+.before-card small {
+  font-size: 10px;
+  margin-left: 35px;
+}
+.before-card .logo {
+  width: 100px;
+}
+.after-card {
+  margin-left: -120px !important;
+  margin-top: 200px !important;
+  color: var(--blue);
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  box-shadow: 0 0 14px -4px darkgrey;
+  padding: 25px;
+  background: #fff;
+}

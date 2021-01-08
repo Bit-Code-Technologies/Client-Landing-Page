@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="res.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/splide.min.css">
+  <link rel="stylesheet" href="./assets/css/themes/splide-default.min.css">
+  <link rel="stylesheet" href="./assets/css/rangable.css">
+
+  <title>Credence Credit</title>
+</head>
+
+<body>
+  <header class="d-flex justify-content-between align-items-center">
+    <a href="/">
+      <img class="logo" src="./img/CredencenewLogo-6.png" alt="Credence credit logo">
+    </a>
+    <div class="call d-flex align-items-center">
+      <span class="icn-wrp d-flex align-items-center justify-content-center">
+        <img src="./img/phone-call.svg" alt="credence credit call">
+      </span>
+      <a href="tel:647 352 3328" target="_blank">647 352 3328</a>
+    </div>
+  </header>
+
+  <section class="main">
+    <div class="main-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-7 text-xl-start text-center p-lg-5">
+            <h1 class="main-h mt-xl-0 mt-2">Reduce your debts by up to 80%</h1>
+            <h6 class="main-sub">Enter your unsecured debt amount and see what you
+              can save.</h6>
+
+            <div class="calc m-xl-0  m-auto overflow-auto">
+              <div class="d-flex justify-content-center mt-3">
+                <div class="step d-flex align-items-center active">
+                  <div>
+                    <span class="num">1</span>
+                  </div>
+                  <span class="line"></span>
+                </div>
+                <div id="step-2" class="step d-flex align-items-center">
+                  <span class="num">2</span>
+                  <span class="line"></span>
+                </div>
+                <div id="step-3" class="step d-flex align-items-center">
+                  <span class="num">3</span>
+                </div>
+              </div>
+              <div class="splide calc-slider">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <h3 class="txt-red mt-3 text-center fw-bold">DO YOU QUALIFY?</h3>
+                      <p class="text-white text-center">Get a Free Estimate Today!</p>
+                      <div class="mx-3">
+                        <input title="amount range" id="range" type="text">
+                        <div class="d-flex justify-content-between">
+                          <span class="text-white">$5000</span>
+                          <span class="text-white">$100,000</span>
+                        </div>
+                        <br>
+                        <div class="mx-2 text-white"><label for="amount">Amount</label></div>
+                        <input value="24000" id="amount" class="form-control rounded-pill" type="text">
+                        <div class="mt-2 text-start">
+                          <div class="form-check">
+                            <input checked onclick="return false;" class="form-check-input" type="checkbox" value=""
+                              id="c1">
+                            <label class="form-check-label text-white" for="c1">
+                              Reduce it to <span class="fs-5 txt-red fw-bold">$<span
+                                  id="reduce-amount">8000</span></span>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input checked onclick="return false;" class="form-check-input" type="checkbox" value=""
+                              id="c2">
+                            <label class="form-check-label text-white" for="c2">
+                              Your monthly payments will be <span class="fs-5 txt-red fw-bold">$<span
+                                  id="mon">200</span></span> for <span class="fs-5 txt-red fw-bold"><span
+                                  id="duration">40</span></span>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input checked onclick="return false;" class="form-check-input" type="checkbox" value=""
+                              id="c3">
+                            <label class="form-check-label text-white" for="c3">
+                              Interest will be zero
+                            </label>
+                          </div>
+                        </div>
+                        <button onclick="slideChange('+1')" class="btn btn-red shadow rounded-pill w-100 my-2">Get
+                          Started</button>
+                      </div>
+                    </li>
+
+
+                    <li class="splide__slide">
+                      <h3 class="txt-red mt-3 text-center fw-bold">DO YOU QUALIFY?</h3>
+                      <p class="text-white text-center">Get a Free Estimate Today!</p>
+                      <div class="mx-4">
+                        <h3 class="text-white text-center"><label for="monthly-income">Monthly take home income</label>
+                        </h3>
+                        <input id="monthly-income" type="text" class="form-control rounded-pill" placeholder="$5000"
+                          value="5000">
+                        <div class="d-flex mt-5">
+                          <button onclick="slideChange('-1')"
+                            class="btn btn-outline-danger rounded-pill w-100 mx-2">Previous</button>
+                          <button onclick="slideChange('+1')" class="btn btn-red rounded-pill w-100 mx-2">Next</button>
+                        </div>
+                      </div>
+                    </li>
+
+
+                    <li class="splide__slide">
+                      <form onsubmit="calcFormSubmit(event)">
+                        <div class="mx-3">
+                          <h4 class="text-white text-center">TO OBTAIN YOUR FREE ESTIMATE, FILL-IN THE BELOW FORM…</h4>
+                          <div class="d-flex justify-content-between">
+                            <div class="mb-2">
+                              <label for="fname" class="form-label text-white">First Name</label>
+                              <input required type="text" class="form-control rounded-pill" id="fname" name="fname"
+                                placeholder="First Name">
+                            </div>
+                            <div class="mb-2">
+                              <label for="lname" class="form-label text-white">Last Name</label>
+                              <input required type="text" class="form-control rounded-pill" id="lname" name="lname"
+                                placeholder="Last Name">
+                            </div>
+                          </div>
+                          <div class="mb-2">
+                            <label for="email" class="form-label text-white">Email</label>
+                            <input required type="email" class="form-control rounded-pill" id="email" name="email"
+                              placeholder="example@mail.com">
+                          </div>
+                          <div class="mb-2">
+                            <label for="phone" class="form-label text-white">Phone</label>
+                            <input required type="phone" class="form-control rounded-pill" id="phone" name="phone"
+                              placeholder="Phone">
+                          </div>
+                        </div>
+                        <div class="d-flex mt-3">
+                          <button type="button" onclick="slideChange('-1')"
+                            class="btn btn-outline-danger rounded-pill w-100 mx-3">Previous</button>
+                          <button onclick="slideChange('+1')" class="btn btn-red rounded-pill w-100 mx-3"
+                            type="submit">Submit</button>
+                        </div>
+                      </form>
+                    </li>
+                    <li class="splide__slide">
+                      <h5 class="text-center text-white mt-5">Your data successfully submitted.</h5>
+                      <h4 class="text-center text-white">Thank You.</h4>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 p-xl-5 g-5 d-flex flex-column align-items-center">
+            <div class="h-img-wrp">
+            </div>
+            <div class="d-flex align-items-center mt-3 support">
+              <div class="rating">
+                <div><img src="./img/google.jpg" alt=""></div>
+                <span>5.0</span> <img class="star" src="./img/star.png" alt="">
+              </div>
+              <!-- <div class="rating"><img src="./img/bbb.jpg" alt=""></div> -->
+              <div class="rating"><img src="./img/warranty.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container mt-3">
+    <h5 class="text-center text-capitalize txt-red">IN THE LAST DECADE</h5>
+    <h2 class="text-center fw-bold txt-blue">We've Helped Over thousands of Canadians <br> Save Millions Of Dollars In
+      Debt</h2>
+    <br>
+    <br>
+    <div class="d-flex justify-content-center align-items-center rat">
+      <img class="g" src="./img/google-letter.png" alt="">
+      <h1 class="fw-bold txt-blue mb-0 mx-2">5.0</h1>
+      <img class="s" src="./img/star.png" alt="">
+    </div>
+    <br>
+    <br>
+  </div>
+
+  <!-- REVIEWs -->
+  <div class="container mb-5">
+    <div class="splide review">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2">My experience with Sangita was very good. She was very patience even when I
+                was ready to
+                give up. Thank God for her she encourage and help me focus on the positive. Now I can focus
+                on paying one bill I am very happy. Sangita goal is to make sure you are happy. May the Lord
+                continue to bless her richly. I will recommend a friend because of the service I received.
+                Blessings 👍</p>
+              <div class="fw-bold">Levi Beharie</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2">Credence Credit is very good i assisting their client. My agent Mahmood is
+                very
+                accommodating. If i have a question he answer me right away. that' why i recommend my two
+                friends to credence credit.</p>
+              <div class="fw-bold">Maria Merachel</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2">Very good service from Credence. Very professional and transparent.Sangita Is
+                very helpful
+                and empathetic. Gave good advice and followed through! Highly recommended! Thank you
+                Credence for all your help!</p>
+              <div class="fw-bold">Quangdiem Nguyen</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2">I would say Excellent!!</p>
+              <div class="fw-bold">Roxan Fronda</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2">Credence Credit is very good i assisting their client. My agent Mahmood is
+                very
+                accommodating. If i have a question he answer me right away. that' why i recommend my two
+                friends to credence credit.</p>
+              <div class="fw-bold">Maria Merachel</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2">Since the day i was connected to them I feel worry free! Because the first
+                couple months of
+                my application some of my creditor keep calling me! So I always call my agent to ask what i
+                need to do to that creditor and what ever concerns I had he’s always there to advice me what
+                to do! Now Im happy I finished 1 year! Thank you so much for the help now not so much stress
+                on my debt! Because I can manage to pay my debt slowly because now it’s affordable my
+                monthly payments! Again thank you so much!</p>
+              <div class="fw-bold">Maylanie Daquioag Valdez</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2"> These guys are amazing. Mahmood has been so helpful in this journey of
+                getting my finances
+                back on track. He was able to work out a great deal that will now help me reach my dreams of
+                owning a home. The credit counselling was the most important and I learned so much. Thank
+                you for helping me out and giving me hope for the future. The process was so simple and it’s
+                given me a lot of confidence. Thank you for you services and advice.</p>
+              <div class="fw-bold">Lauren Fogazzi</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2"> Credence credit really helped me in my consumer proposal and would recommend
+                this to anyone.
+                My advisor Mahmood has been extraordinaire in dealing with my situation with out most
+                respect and dignity. Thank you again Credence Credit and Mahmood</p>
+              <div class="fw-bold">Agnes Samaniego</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2">My experience with CC was exceptional...from the first call I was given clear
+                instructions
+                and was put at ease about the whole process. Loss of my previous job had created more stress
+                for me than I anticipated and with the help of CC team I was able to regain the positive
+                outlook again. Thank you Mahmood and team!</p>
+              <div class="fw-bold">Slavica Djurdjevic</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2">Credence Credit is a firm that truly values its clients. Consultations will
+                let you see the
+                gaps in your planning and proposed solutions are practical and easy to apply. Would
+                definitely recommend anyone looking for some financial wisdom to improve their financial
+                profile.</p>
+              <div class="fw-bold">Sameen Ather</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2">Worked with Mahmood on a fairly complicated situation. He was very calm and
+                understanding
+                and really took the stress away. It was a pleasure working with him and the Credence team!</p>
+              <div class="fw-bold">Sydney S. Iyer</div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="slide-item">
+              <div class="d-flex align-items-center">
+                <img class="g-logo" src="./img/google-letter.png" alt="">
+                <img class="g-star" src="./img/star.png" alt="">
+              </div>
+              <p class="review-text my-2">Thanks to Credence Credit for all the help I lost my job and had to depend on
+                credit cards
+                for 10 months, I was really frustrated with my debt and all the collection calls. I went to
+                credence credit for counselling, the counsellor helped me consolidate my debt with
+                affordable payment.I would refer anyone to go to them as they are professional and
+                knowledgeable.</p>
+              <div class="fw-bold">nadz h</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="text-center fw-bold txt-blue mb-4">Debts We Can Help You With</h2>
+    <p class="text-center txt-blue mb-5">Learn how to make wise financial decisions, build financial literacy, gain a
+      <br> deeper
+      understanding of credit, and develop a plan to achieve your goals.
+    </p>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-auto">
+      <div class="feature d-flex flex-column align-items-center">
+        <div class="img-wrp">
+          <img src="./img/debs/creditcard.png" alt="">
+        </div>
+        <span class="fs-5 text-center mt-1">Credit Card
+          Balances</span>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="feature d-flex flex-column align-items-center">
+        <div class="img-wrp">
+          <img src="./img/debs/money.png" alt="">
+        </div>
+        <span class="fs-5 text-center mt-1">Payday Loans</span>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="feature d-flex flex-column align-items-center">
+        <div class="img-wrp">
+          <img src="./img/debs/loan.png" alt="">
+        </div>
+        <span class="fs-5 text-center mt-1">Personal Loans</span>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="feature d-flex flex-column align-items-center">
+        <div class="img-wrp">
+          <img src="./img/debs/money-stack.png" alt="">
+        </div>
+        <span class="fs-5 text-center mt-1">Miscellaneous</span>
+        <small>(407 Debt, Phone Bills and/or Utility Bills)</small>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="feature d-flex flex-column align-items-center">
+        <div class="img-wrp">
+          <img src="./img/debs/secure-payment.png" alt="">
+        </div>
+        <span class="fs-5 text-center mt-1">Overdraft and Lines
+          of Credit</span>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="feature d-flex flex-column align-items-center">
+        <div class="img-wrp">
+          <img src="./img/debs/bank.png" alt="">
+        </div>
+        <span class="fs-5 text-center mt-1">Business & Income
+          Tax Debt</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- review 2 slider -->
+
+
+  <div class="mx-auto">
+    <div class="splide review-second mx-auto overflow-auto">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="position-relative">
+              <div class="before-card m-3">
+                <h5>Before</h5>
+                <div class="d-flex align-items-center mb-2"><span>
+                    <img class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
+                  <b> $19,723</b>
+                </div>
+                <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                      alt="sum"></span>
+                  Monthly Payment:&nbsp; <b>$654</b></div>
+                <div class="d-flex mb-2"><span><img class="icn" src="./img/dot.svg" alt="sum"></span>
+                  <div>Creditors: <b>TD Canadian Tire, Easy Financial, Scotiabank</b></div>
+                </div>
+                <div> <img class="icn" src="./img/user.svg" alt=""> A.Samaniego <br><small> – North York, ON</small></div>
+              </div>
+    
+              <div class="before-card after-card">
+                <h5><b>After</b></h5>
+                <div class="d-flex align-items-center mb-2"><span>
+                    <img class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
+                  <b> $7,500</b>
+                </div>
+                <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                      alt="sum"></span>
+                  New Monthly Payment:&nbsp; <b> $125</b></div>
+                <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/money-bag.svg"
+                      alt="sum"></span>
+                  Total Savings:&nbsp; <b> $12,223</b></div>
+                <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/low-price.svg"
+                      alt="sum"></span>
+                  Debt Reduction:&nbsp; <b> 62%</b></div>
+                <img class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
+              </div>
+            </div>
+          </li>
+  
+  
+          <li class="splide__slide">
+            <div class="before-card m-5">
+              <h5>Before</h5>
+              <div class="d-flex align-items-center mb-2"><span>
+                  <img class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
+                <b> $19,723</b>
+              </div>
+              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                    alt="sum"></span>
+                Monthly Payment:&nbsp; <b>$654</b></div>
+              <div class="d-flex mb-2"><span><img class="icn" src="./img/dot.svg" alt="sum"></span>
+                <div>Creditors: <b>TD Canadian Tire, Easy Financial, Scotiabank</b></div>
+              </div>
+              <div> <img class="icn" src="./img/user.svg" alt=""> A.Samaniego <br><small> – North York, ON</small></div>
+            </div>
+  
+            <div class="before-card after-card m-5">
+              <h5><b>After</b></h5>
+              <div class="d-flex align-items-center mb-2"><span>
+                  <img class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
+                <b> $7,500</b>
+              </div>
+              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                    alt="sum"></span>
+                New Monthly Payment:&nbsp; <b> $125</b></div>
+              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/money-bag.svg"
+                    alt="sum"></span>
+                Total Savings:&nbsp; <b> $12,223</b></div>
+              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/low-price.svg"
+                    alt="sum"></span>
+                Debt Reduction:&nbsp; <b> 62%</b></div>
+              <img class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
+            </div>
+          </li>
+  
+  
+          <li class="splide__slide">
+  
+            <div class="before-card m-5">
+              <h5>Before</h5>
+              <div class="d-flex align-items-center mb-2"><span>
+                  <img class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
+                <b> $19,723</b>
+              </div>
+              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                    alt="sum"></span>
+                Monthly Payment:&nbsp; <b>$654</b></div>
+              <div class="d-flex mb-2"><span><img class="icn" src="./img/dot.svg" alt="sum"></span>
+                <div>Creditors: <b>TD Canadian Tire, Easy Financial, Scotiabank</b></div>
+              </div>
+              <div> <img class="icn" src="./img/user.svg" alt=""> A.Samaniego <br><small> – North York, ON</small></div>
+            </div>
+  
+            <div class="before-card after-card m-5">
+              <h5><b>After</b></h5>
+              <div class="d-flex align-items-center mb-2"><span>
+                  <img class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
+                <b> $7,500</b>
+              </div>
+              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                    alt="sum"></span>
+                New Monthly Payment:&nbsp; <b> $125</b></div>
+              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/money-bag.svg"
+                    alt="sum"></span>
+                Total Savings:&nbsp; <b> $12,223</b></div>
+              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/low-price.svg"
+                    alt="sum"></span>
+                Debt Reduction:&nbsp; <b> 62%</b></div>
+              <img class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/rangeable@latest/dist/rangeable.min.js"></script>
+  <script src="./assets/js/splide.min.js"></script>
+
+  <script src="./assets/js/init.js"></script>
+</body>
+
+</html>
