@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="credence credit">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,7 +29,7 @@
       <span class="icn-wrp d-flex align-items-center justify-content-center">
         <img src="./img/phone-call.svg" alt="credence credit call">
       </span>
-      <a href="tel:647 352 3328" target="_blank">647 352 3328</a>
+      <a href="tel:647 352 3328" target="_blank" rel="noopener noreferrer">647 352 3328</a>
     </div>
   </header>
 
@@ -38,8 +39,8 @@
         <div class="row">
           <div class="col-xl-7 text-xl-start text-center p-lg-5">
             <h1 class="main-h mt-xl-0 mt-2">Reduce your debts by up to 80%</h1>
-            <h6 class="main-sub">Enter your unsecured debt amount and see what you
-              can save.</h6>
+            <p class="main-sub">Enter your unsecured debt amount and see what you
+              can save.</p>
 
             <div class="calc m-xl-0  m-auto overflow-auto">
               <div class="d-flex justify-content-center mt-3">
@@ -61,7 +62,7 @@
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide">
-                      <h3 class="txt-red mt-3 text-center fw-bold">DO YOU QUALIFY?</h3>
+                      <div class="txt-red mt-3 text-center fw-bold fs-3">DO YOU QUALIFY?</div>
                       <p class="text-white text-center">Get a Free Estimate Today!</p>
                       <div class="mx-3">
                         <input title="amount range" id="range" type="text">
@@ -105,11 +106,14 @@
 
 
                     <li class="splide__slide">
-                      <h3 class="txt-red mt-3 text-center fw-bold">DO YOU QUALIFY?</h3>
-                      <p class="text-white text-center">Get a Free Estimate Today!</p>
+                      <section>
+                        <div class="fs-3 txt-red mt-3 text-center fw-bold">DO YOU QUALIFY?</div>
+                        <p class="text-white text-center">Get a Free Estimate Today!</p>
+                      </section>
                       <div class="mx-4">
-                        <h3 class="text-white text-center"><label for="monthly-income">Monthly take home income</label>
-                        </h3>
+                        <div class="fw-bold fs-3 text-white text-center"><label for="monthly-income">Monthly take home
+                            income</label>
+                        </div>
                         <input id="monthly-income" type="text" class="form-control rounded-pill" placeholder="$5000"
                           value="5000">
                         <div class="d-flex mt-5">
@@ -124,7 +128,9 @@
                     <li class="splide__slide">
                       <form onsubmit="calcFormSubmit(event)">
                         <div class="mx-3">
-                          <h4 class="text-white text-center">TO OBTAIN YOUR FREE ESTIMATE, FILL-IN THE BELOW FORM…</h4>
+                          <div class="fs-4 fw-bold text-white text-center">TO OBTAIN YOUR FREE ESTIMATE, FILL-IN THE
+                            BELOW FORM…
+                          </div>
                           <div class="d-flex justify-content-between">
                             <div class="mb-2">
                               <label for="fname" class="form-label text-white">First Name</label>
@@ -157,8 +163,8 @@
                       </form>
                     </li>
                     <li class="splide__slide">
-                      <h5 class="text-center text-white mt-5">Your data successfully submitted.</h5>
-                      <h4 class="text-center text-white">Thank You.</h4>
+                      <div class="fs-4 fw-bold text-center text-white mt-5">Your data successfully submitted.</div>
+                      <div class="fs-5 fw-bold text-center text-white">Thank You.</div>
                     </li>
                   </ul>
                 </div>
@@ -187,8 +193,10 @@
   <br>
   <br>
 
+  <div class="blob2 blob "></div>
+
   <div class="container mt-3">
-    <h5 class="text-center text-capitalize txt-red">IN THE LAST DECADE</h5>
+    <div class="fs-5 fw-bold text-center text-capitalize txt-red">IN THE LAST DECADE</>
     <h2 class="text-center fw-bold txt-blue">We've Helped Over thousands of Canadians <br> Save Millions Of Dollars In
       Debt</h2>
     <br>
@@ -201,6 +209,7 @@
     <br>
     <br>
   </div>
+
 
   <!-- REVIEWs -->
   <div class="container mb-5">
@@ -375,6 +384,8 @@
     </div>
   </div>
 
+  <div class="blob3 blob "></div>
+
   <div class="container">
     <h2 class="text-center fw-bold txt-blue mb-4">Debts We Can Help You With</h2>
     <p class="text-center txt-blue mb-5">Learn how to make wise financial decisions, build financial literacy, gain a
@@ -439,131 +450,290 @@
 
 
   <!-- review 2 slider -->
+  <div class="blob4 blob "></div>
 
+  <h2 class="text-center txt-red fw-bold my-5">RECENT SETTLEMENTS</h2>
+  <div class="row justify-content-center position-relative mx-auto">
+    <div class="blob1  blob "></div>
+    <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-sm-12">
+      <div class="splide review-second mx-auto">
+        <div class="splide__track">
+          <ul class="splide__list">
 
-  <div class="mx-auto">
-    <div class="splide review-second mx-auto overflow-auto">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <div class="position-relative">
-              <div class="before-card m-3">
-                <h5>Before</h5>
-                <div class="d-flex align-items-center mb-2"><span>
-                    <img class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
-                  <b> $19,723</b>
+            <li class="splide__slide d-flex justify-content-center">
+              <div class="card-wrp">
+                <section class="before-card m-3">
+                  <div class="fs-5 fw-bold mb-2">Before</div>
+                  <div class="d-flex align-items-center mb-2"><span>
+                      <img class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
+                    <b> $19,723</b>
+                  </div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                        alt="sum"></span>
+                    Monthly Payment:&nbsp; <b>$654</b></div>
+                  <div class="d-flex mb-2"><span><img class="icn" src="./img/dot.svg" alt="sum"></span>
+                    <div>Creditors: <b>TD Canadian Tire, Easy Financial, Scotiabank</b></div>
+                  </div>
+                  <div> <img class="icn" src="./img/user.svg" alt=""> A.Samaniego <br><small> – North York, ON</small>
+                  </div>
+                </section>
+
+                <div class="before-card after-card">
+                  <div class="fs-5 fw-bold mb-2">After</div>
+                  <div class="d-flex align-items-center mb-2"><span>
+                      <img class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
+                    <b> $7,500</b>
+                  </div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                        alt="sum"></span>
+                    New Monthly Payment:&nbsp; <b> $125</b></div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/money-bag.svg"
+                        alt="sum"></span>
+                    Total Savings:&nbsp; <b> $12,223</b></div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/low-price.svg"
+                        alt="sum"></span>
+                    Debt Reduction:&nbsp; <b> 62%</b></div>
+                  <img class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
                 </div>
-                <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
-                      alt="sum"></span>
-                  Monthly Payment:&nbsp; <b>$654</b></div>
-                <div class="d-flex mb-2"><span><img class="icn" src="./img/dot.svg" alt="sum"></span>
-                  <div>Creditors: <b>TD Canadian Tire, Easy Financial, Scotiabank</b></div>
+              </div>
+            </li>
+
+            <li class="splide__slide d-flex justify-content-center">
+              <div class="card-wrp">
+                <section class="before-card m-3">
+                  <div class="fs-5 fw-bold mb-2">Before</div>
+                  <div class="d-flex align-items-center mb-2"><span>
+                      <img class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
+                    <b> $53,629</b>
+                  </div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                        alt="sum"></span>
+                    Monthly Payment:&nbsp; <b>$1,609</b></div>
+                  <div class="d-flex mb-2"><span><img class="icn" src="./img/dot.svg" alt="sum"></span>
+                    <div>Creditors: <b>Money Mart, CIBC, RBC, Rogers, Income Tax</b></div>
+                  </div>
+                  <div> <img class="icn" src="./img/user.svg" alt="">D.Craib <br><small> – North York, ON</small>
+                  </div>
+                </section>
+
+                <div class="before-card after-card">
+                  <div class="fs-5 fw-bold mb-2">After</div>
+                  <div class="d-flex align-items-center mb-2"><span>
+                      <img class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
+                    <b> $18,000</b>
+                  </div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                        alt="sum"></span>
+                    New Monthly Payment:&nbsp; <b> $300</b></div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/money-bag.svg"
+                        alt="sum"></span>
+                    Total Savings:&nbsp; <b> $35,629</b></div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/low-price.svg"
+                        alt="sum"></span>
+                    Debt Reduction:&nbsp; <b> 66.5%</b></div>
+                  <img class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
                 </div>
-                <div> <img class="icn" src="./img/user.svg" alt=""> A.Samaniego <br><small> – North York, ON</small></div>
               </div>
-    
-              <div class="before-card after-card">
-                <h5><b>After</b></h5>
-                <div class="d-flex align-items-center mb-2"><span>
-                    <img class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
-                  <b> $7,500</b>
+            </li>
+
+            <li class="splide__slide d-flex justify-content-center">
+              <div class="card-wrp">
+                <section class="before-card m-3">
+                  <div class="fs-5 fw-bold mb-2">Before</div>
+                  <div class="d-flex align-items-center mb-2"><span>
+                      <img class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
+                    <b> $38,549</b>
+                  </div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                        alt="sum"></span>
+                    Monthly Payment:&nbsp; <b>$1,154</b></div>
+                  <div class="d-flex mb-2"><span><img class="icn" src="./img/dot.svg" alt="sum"></span>
+                    <div>Creditors: <b>TD, The Brick, BMO, PC Financial, Walmart</b></div>
+                  </div>
+                  <div> <img class="icn" src="./img/user.svg" alt="">M.Elenor <br><small> – Scarborough, ON</small>
+                  </div>
+                </section>
+
+                <div class="before-card after-card">
+                  <div class="fs-5 fw-bold mb-2">After</div>
+                  <div class="d-flex align-items-center mb-2"><span>
+                      <img class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
+                    <b> $7,500</b>
+                  </div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                        alt="sum"></span>
+                    New Monthly Payment:&nbsp; <b> $125</b></div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/money-bag.svg"
+                        alt="sum"></span>
+                    Total Savings:&nbsp; <b> $12,223</b></div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/low-price.svg"
+                        alt="sum"></span>
+                    Debt Reduction:&nbsp; <b> 62%</b></div>
+                  <img class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
                 </div>
-                <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
-                      alt="sum"></span>
-                  New Monthly Payment:&nbsp; <b> $125</b></div>
-                <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/money-bag.svg"
-                      alt="sum"></span>
-                  Total Savings:&nbsp; <b> $12,223</b></div>
-                <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/low-price.svg"
-                      alt="sum"></span>
-                  Debt Reduction:&nbsp; <b> 62%</b></div>
-                <img class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
               </div>
-            </div>
-          </li>
-  
-  
-          <li class="splide__slide">
-            <div class="before-card m-5">
-              <h5>Before</h5>
-              <div class="d-flex align-items-center mb-2"><span>
-                  <img class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
-                <b> $19,723</b>
+            </li>
+
+            <li class="splide__slide d-flex justify-content-center">
+              <div class="card-wrp">
+                <section class="before-card m-3">
+                  <div class="fs-5 fw-bold mb-2">Before</div>
+                  <div class="d-flex align-items-center mb-2"><span>
+                      <img class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
+                    <b> $86,549</b>
+                  </div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                        alt="sum"></span>
+                    Monthly Payment:&nbsp; <b>$2,139</b></div>
+                  <div class="d-flex mb-2"><span><img class="icn" src="./img/dot.svg" alt="sum"></span>
+                    <div>Creditors: <b>RBC, Fairstone, Money Mart, CIBC, Student Loan</b></div>
+                  </div>
+                  <div> <img class="icn" src="./img/user.svg" alt="">M.Quennell <br><small> – Toronto, ON
+                    </small>
+                  </div>
+                </section>
+
+                <div class="before-card after-card">
+                  <div class="fs-5 fw-bold mb-2">After</div>
+                  <div class="d-flex align-items-center mb-2"><span>
+                      <img class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
+                    <b> $16,200</b>
+                  </div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
+                        alt="sum"></span>
+                    New Monthly Payment:&nbsp; <b>$270</b></div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/money-bag.svg"
+                        alt="sum"></span>
+                    Total Savings:&nbsp; <b> $70,349</b></div>
+                  <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/low-price.svg"
+                        alt="sum"></span>
+                    Debt Reduction:&nbsp; <b>81.2%</b></div>
+                  <img class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
+                </div>
               </div>
-              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
-                    alt="sum"></span>
-                Monthly Payment:&nbsp; <b>$654</b></div>
-              <div class="d-flex mb-2"><span><img class="icn" src="./img/dot.svg" alt="sum"></span>
-                <div>Creditors: <b>TD Canadian Tire, Easy Financial, Scotiabank</b></div>
-              </div>
-              <div> <img class="icn" src="./img/user.svg" alt=""> A.Samaniego <br><small> – North York, ON</small></div>
-            </div>
-  
-            <div class="before-card after-card m-5">
-              <h5><b>After</b></h5>
-              <div class="d-flex align-items-center mb-2"><span>
-                  <img class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
-                <b> $7,500</b>
-              </div>
-              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
-                    alt="sum"></span>
-                New Monthly Payment:&nbsp; <b> $125</b></div>
-              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/money-bag.svg"
-                    alt="sum"></span>
-                Total Savings:&nbsp; <b> $12,223</b></div>
-              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/low-price.svg"
-                    alt="sum"></span>
-                Debt Reduction:&nbsp; <b> 62%</b></div>
-              <img class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
-            </div>
-          </li>
-  
-  
-          <li class="splide__slide">
-  
-            <div class="before-card m-5">
-              <h5>Before</h5>
-              <div class="d-flex align-items-center mb-2"><span>
-                  <img class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
-                <b> $19,723</b>
-              </div>
-              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
-                    alt="sum"></span>
-                Monthly Payment:&nbsp; <b>$654</b></div>
-              <div class="d-flex mb-2"><span><img class="icn" src="./img/dot.svg" alt="sum"></span>
-                <div>Creditors: <b>TD Canadian Tire, Easy Financial, Scotiabank</b></div>
-              </div>
-              <div> <img class="icn" src="./img/user.svg" alt=""> A.Samaniego <br><small> – North York, ON</small></div>
-            </div>
-  
-            <div class="before-card after-card m-5">
-              <h5><b>After</b></h5>
-              <div class="d-flex align-items-center mb-2"><span>
-                  <img class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
-                <b> $7,500</b>
-              </div>
-              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/calendar.svg"
-                    alt="sum"></span>
-                New Monthly Payment:&nbsp; <b> $125</b></div>
-              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/money-bag.svg"
-                    alt="sum"></span>
-                Total Savings:&nbsp; <b> $12,223</b></div>
-              <div class="d-flex align-items-center mb-2"><span><img class="icn" src="./img/low-price.svg"
-                    alt="sum"></span>
-                Debt Reduction:&nbsp; <b> 62%</b></div>
-              <img class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
-            </div>
-          </li>
-        </ul>
+            </li>
+
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
+  <br>
+  <br>
+  <br>
+  <div class="container mt-lg-5">
+    <div class="row justify-content-lg-start justify-content-center">
+      <div class="col-auto mx-lg-0 mx-md-auto text-lg-start text-center">
+        <div class="mx-auto my-3"><img height="80" src="./img/CredencenewLogo-6.png" alt="logo credence credit"></div>
+        <h2 class="fw-bold txt-red text-sm-center">MAKES DEBT CONSOLIDATION</h2>
+        <h3 class="fw-bold">EASY WITH:</h3>
+      </div>
+    </div>
 
+    <div class="row justify-content-sm-center mt-130">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="fcard mx-md-0 mx-auto">
+          <div class="f-icn">
+            <img src="./img/secure.svg" alt="secure">
+            <span></span>
+          </div>
+          <h4 class="mt-3 fw-bold txt-blue">No Large Upfront Fee</h4>
+          <p class="txt-blue">Unlike other Credit Counselling Companies, we do not charge large upfront fees.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mt--160">
+        <div class="fcard mx-md-0 mx-auto">
+          <div class="f-icn">
+            <img src="./img/downpay.svg" alt="secure">
+            <span></span>
+          </div>
+          <h4 class="mt-3 fw-bold txt-blue">One low monthly payment for all debts</h4>
+          <p class="txt-blue">We consolidate all your debts to one small monthly payment.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mt--260">
+        <div class="fcard mx-md-0 mx-auto">
+          <div class="f-icn">
+            <img src="./img/statistics.svg" alt="secure">
+            <span></span>
+          </div>
+          <h4 class="mt-3 fw-bold txt-blue">Fast Pay-off plans (24-60 months)</h4>
+          <p class="txt-blue">Lower your monthly payment to pay off your debt in 24 to 60 months.</p>
+        </div>
+      </div>
+    </div>
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-    crossorigin="anonymous"></script> -->
+    <div class="row justify-content-sm-center mt-130">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="fcard mx-md-0 mx-auto">
+          <div class="f-icn">
+            <img src="./img/percentage.svg" alt="secure">
+            <span></span>
+          </div>
+          <h4 class="mt-3 fw-bold txt-blue">Waived Interest Rates</h4>
+          <p class="txt-blue">We can stop your interest so your full payment goes towards principal.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mt--160">
+        <div class="fcard mx-md-0 mx-auto">
+          <div class="f-icn">
+            <img src="./img/consultant.svg" alt="secure">
+            <span></span>
+          </div>
+          <h4 class="mt-3 fw-bold txt-blue">Free Confidential Consultation</h4>
+          <p class="txt-blue">Initial confidential consultation is always free from our Certified Credit Counsellor to
+            make sure you can make a sound decision on choosing your option.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mt--260">
+        <div class="fcard mx-md-0 mx-auto">
+          <div class="f-icn">
+            <img src="./img/rating.svg" alt="secure">
+            <span></span>
+          </div>
+          <h4 class="mt-3 fw-bold txt-blue">Guaranteed Customer Satisfaction</h4>
+          <p class="txt-blue">Credence Credit guarantees to beat any offer in Ontario.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blob5"></div>
+
+  <footer>
+    <img src="./img/wave.svg" alt=" credence cr footer">
+    <div class="footer overflow-hidden">
+      <div class="lg mx-auto my-3"><img src="./img/CredencenewLogo-6.png" alt="logo credence credit"></div>
+      <div class="row justify-content-center mb-2 mt-4">
+        <div class="col-2 col-lg-3 col-md-4 col-sm-5 my-5">
+          <div class="d-flex justify-content-between">
+            <div class="social"><a target="_blank" rel="noopener noreferrer"
+                href="https://www.facebook.com/credencecredit/"><img src="./img/facebook.svg" alt="social"></a></div>
+            <div class="social"><a target="_blank" rel="noopener noreferrer"
+                href="https://www.linkedin.com/company/credence-credit"><img src="./img/instagram.svg" alt="social"></a>
+            </div>
+            <div class="social"><a target="_blank" rel="noopener noreferrer"
+                href="https://twitter.com/credencecredit"><img src="./img/linkedin.svg" alt="social"></a></div>
+            <div class="social"><a target="_blank" rel="noopener noreferrer"
+                href="https://www.instagram.com/explore/locations/1900159150286258/credence-credit"><img
+                  src="./img/twitter.svg" alt="social"></a></div>
+            <div class="social"><a target="_blank" rel="noopener noreferrer"
+                href="https://www.youtube.com/channel/UCdhmXBYgMByUvycPeVpcEXA"><img src="./img/youtube.svg"
+                  alt="social"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center my-3"><small><a target="_blank" rel="noopener noreferrer"
+            href="https://www.ccredit.ca/terms-of-services/">Terms of
+            Use</a> | <a target="_blank" rel="noopener noreferrer" href="https://www.ccredit.ca/privacy-policy/">Privacy
+            Policy</a></small></div>
+      <div class="text-center credit "><small>© 2019. All rights reserved Credence Credit owned by Credence Services
+          Inc</small></div>
+      <br>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
     crossorigin="anonymous"></script>

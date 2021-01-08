@@ -12,23 +12,53 @@
   .main-bg {
     background-size: 150vw;
   }
+  .mt--160,.mt--260{
+    margin-top: 0;
+  }
+  .fcard{
+    margin-top: 30px;
+  }
+  .mt-130{
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .blob2 {
+    opacity: 0.1;
+  }
   .main-h {
     font-size: 40px;
     margin-top: 30px !important ;
   }
-  .main-sub{
+  .main-sub {
     font-size: 14px;
   }
   .main-bg {
     background-size: 170vw;
   }
+  
+}
+
+@media screen and (max-width: 610px) {
+  .card-wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .before-card {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .after-card {
+    position: relative;
+    margin-top: 10px !important;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .calc{
+  .calc {
     width: 95vw;
   }
   .main-h {

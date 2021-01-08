@@ -39,6 +39,9 @@ const rangeable = new Rangeable(range, {
   value: 24000,
   vertical: false,
   controls: undefined,
+  onInit: () => {
+    document.querySelector('[tabindex="1"]').setAttribute('tabindex', 0)
+s  },
   onChange: (val) => {
     amount.value = val
     calcSetterByLogic(val)
