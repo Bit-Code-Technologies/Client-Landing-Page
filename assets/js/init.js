@@ -20,8 +20,18 @@ function calcFormSubmit(event) {
   data.monthlyAmount = monthlyAmount.innerHTML
   data.duration = duration.innerHTML
   data.monthlyIncome = monthlyIcome.value
+  formdata.append("reduceAmount", data.reduceAmount);
+  formdata.append("monthlyAmount", data.monthlyAmount);
+  formdata.append("duration", data.duration);
+  formdata.append("monthlyIncome", data.monthlyIncome);
 
 
+  const url = "https://debtfreelife.ccredit.ca/wp-admin/admin-ajax.php?action=bitconnectzcrm_save_data"
+  const response = fetch(url, {
+    method: 'POST',
+    mode: 'cors',
+    body: formdata
+  });
   console.log(data)
   slideChange('+1')
 }
@@ -40,8 +50,7 @@ const rangeable = new Rangeable(range, {
   vertical: false,
   controls: undefined,
   onInit: () => {
-    document.querySelector('[tabindex="1"]').setAttribute('tabindex', 0)
-s  },
+    document.querySelector('[tabindex="1"]').setAttribute('tabindex', 0)},
   onChange: (val) => {
     amount.value = val
     calcSetterByLogic(val)
