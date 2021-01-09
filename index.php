@@ -12,25 +12,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="res.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/res.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/splide.min.css">
-  <link rel="stylesheet" href="./assets/css/themes/splide-default.min.css">
-  <link rel="stylesheet" href="./assets/css/rangable.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/splide.min.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/themes/splide-default.min.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/rangable.css">
   <title>Credence Credit</title>
 </head>
 
 <body>
   <header class="d-flex justify-content-between align-items-center">
     <a href="/">
-      <img loading="lazy" class="logo" src="./img/CredencenewLogo-6.png" alt="Credence credit logo">
+      <img loading="lazy" class="logo" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="Credence credit logo">
     </a>
     <a class="text-decoration-none text-white" href="tel:647 352 3328" target="_blank" rel="noopener noreferrer">
       <div class="call d-flex align-items-center">
         <span class="icn-wrp d-flex align-items-center justify-content-center">
-          <img loading="lazy" src="./img/phone-call.svg" alt="credence credit call">
+          <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/phone-call.svg" alt="credence credit call">
         </span>
         <span class="mx-2 ">647 352 3328</span>
       </div>
@@ -180,11 +180,11 @@
             </div>
             <div class="d-flex align-items-center mt-3 support">
               <div class="rating">
-                <div><img loading="lazy" src="./img/google.jpg" alt=""></div>
-                <span>5.0</span> <img loading="lazy" class="star" src="./img/star.png" alt="">
+                <div><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/google.jpg" alt=""></div>
+                <span>5.0</span> <img loading="lazy" class="star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
-              <!-- <div class="rating"><img loading="lazy" src="./img/bbb.jpg" alt=""></div> -->
-              <div class="rating"><img loading="lazy" src="./img/warranty.jpg" alt=""></div>
+              <!-- <div class="rating"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/bbb.jpg" alt=""></div> -->
+              <div class="rating"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/warranty.jpg" alt=""></div>
             </div>
           </div>
         </div>
@@ -206,9 +206,9 @@
     <br>
     <br>
     <div class="d-flex justify-content-center align-items-center rat">
-      <img loading="lazy" class="g" src="./img/google-letter.png" alt="">
+      <img loading="lazy" class="g" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
       <h1 class="fw-bold txt-blue mb-0 mx-2">5.0</h1>
-      <img loading="lazy" class="s" src="./img/star.png" alt="">
+      <img loading="lazy" class="s" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
     </div>
     <br>
     <br>
@@ -223,8 +223,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2">Since the day i was connected to them I feel worry free! Because the first
                 couple months of
@@ -239,8 +239,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2"> These guys are amazing. Mahmood has been so helpful in this journey of
                 getting my finances
@@ -254,8 +254,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2">My experience with Sangita was very good. She was very patience even when I
                 was ready to
@@ -269,8 +269,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2">Thanks to Credence Credit for all the help I lost my job and had to depend
                 on
@@ -285,8 +285,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2">My experience with CC was exceptional...from the first call I was given
                 clear
@@ -300,8 +300,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2">Credence Credit is a firm that truly values its clients. Consultations will
                 let you see the
@@ -314,8 +314,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2"> Credence credit really helped me in my consumer proposal and would
                 recommend
@@ -328,8 +328,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2">Credence Credit is very good i assisting their client. My agent Mahmood is
                 very
@@ -341,8 +341,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2">I would say Excellent!!</p>
               <div class="fw-bold">Roxan Fronda</div>
@@ -351,8 +351,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2">Very good service from Credence. Very professional and transparent.Sangita
                 Is
@@ -365,8 +365,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2">Worked with Mahmood on a fairly complicated situation. He was very calm and
                 understanding
@@ -377,8 +377,8 @@
           <li class="splide__slide">
             <div class="slide-item">
               <div class="d-flex align-items-center">
-                <img loading="lazy" class="g-logo" src="./img/google-letter.png" alt="">
-                <img loading="lazy" class="g-star" src="./img/star.png" alt="">
+                <img loading="lazy" class="g-logo" src="<?php echo get_template_directory_uri() ?>/img/google-letter.png" alt="">
+                <img loading="lazy" class="g-star" src="<?php echo get_template_directory_uri() ?>/img/star.png" alt="">
               </div>
               <p class="review-text my-2">Credence Credit is very good i assisting their client. My agent Mahmood is
                 very
@@ -407,7 +407,7 @@
         <div class="col-6 col-md-4">
           <div class="feature d-flex flex-column align-items-center">
             <div class="img-wrp">
-              <img loading="lazy" src="./img/debs/creditcard.png" alt="">
+              <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/debs/creditcard.png" alt="">
             </div>
             <span class="fs-5 text-center mt-1">Credit Card
               Balances</span>
@@ -416,7 +416,7 @@
         <div class="col-6 col-md-4">
           <div class="feature d-flex flex-column align-items-center">
             <div class="img-wrp">
-              <img loading="lazy" src="./img/debs/money.png" alt="">
+              <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/debs/money.png" alt="">
             </div>
             <span class="fs-5 text-center mt-1">Payday Loans</span>
           </div>
@@ -424,7 +424,7 @@
         <div class="col-6 col-md-4">
           <div class="feature d-flex flex-column align-items-center">
             <div class="img-wrp">
-              <img loading="lazy" src="./img/debs/loan.png" alt="">
+              <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/debs/loan.png" alt="">
             </div>
             <span class="fs-5 text-center mt-1">Personal Loans</span>
           </div>
@@ -432,7 +432,7 @@
         <div class="col-6 col-md-4">
           <div class="feature d-flex flex-column align-items-center">
             <div class="img-wrp">
-              <img loading="lazy" src="./img/debs/money-stack.png" alt="">
+              <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/debs/money-stack.png" alt="">
             </div>
             <span class="fs-5 text-center mt-1">Miscellaneous</span>
             <small>(407 Debt, Phone Bills and/or Utility Bills)</small>
@@ -441,7 +441,7 @@
         <div class="col-6 col-md-4">
           <div class="feature d-flex flex-column align-items-center">
             <div class="img-wrp">
-              <img loading="lazy" src="./img/debs/secure-payment.png" alt="">
+              <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/debs/secure-payment.png" alt="">
             </div>
             <span class="fs-5 text-center mt-1">Overdraft and Lines
               of Credit</span>
@@ -450,7 +450,7 @@
         <div class="col-6 col-md-4">
           <div class="feature d-flex flex-column align-items-center">
             <div class="img-wrp">
-              <img loading="lazy" src="./img/debs/bank.png" alt="">
+              <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/debs/bank.png" alt="">
             </div>
             <span class="fs-5 text-center mt-1">Business & Income
               Tax Debt</span>
@@ -477,16 +477,16 @@
                 <section class="before-card m-3">
                   <div class="fs-5 fw-bold mb-2">Before</div>
                   <div class="d-flex align-items-center mb-2"><span>
-                      <img loading="lazy" class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
+                      <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
                     <b> $19,723</b>
                   </div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/calendar.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     Monthly Payment:&nbsp; <b>$654</b></div>
-                  <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="./img/dot.svg" alt="sum"></span>
+                  <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/dot.svg" alt="sum"></span>
                     <div>Creditors: <b>TD Canadian Tire, Easy Financial, Scotiabank</b></div>
                   </div>
-                  <div> <img loading="lazy" class="icn" src="./img/user.svg" alt=""> A.Samaniego <br><small> – North
+                  <div> <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/user.svg" alt=""> A.Samaniego <br><small> – North
                       York, ON</small>
                   </div>
                 </section>
@@ -494,19 +494,19 @@
                 <div class="before-card after-card">
                   <div class="fs-5 fw-bold mb-2">After</div>
                   <div class="d-flex align-items-center mb-2"><span>
-                      <img loading="lazy" class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
+                      <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
                     <b> $7,500</b>
                   </div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/calendar.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     New Monthly Payment:&nbsp; <b> $125</b></div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/money-bag.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
                     Total Savings:&nbsp; <b> $12,223</b></div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/low-price.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
                     Debt Reduction:&nbsp; <b> 62%</b></div>
-                  <img loading="lazy" class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
+                  <img loading="lazy" class="logo mt-2 float-end" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="">
                 </div>
               </div>
             </li>
@@ -516,16 +516,16 @@
                 <section class="before-card m-3">
                   <div class="fs-5 fw-bold mb-2">Before</div>
                   <div class="d-flex align-items-center mb-2"><span>
-                      <img loading="lazy" class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
+                      <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
                     <b> $53,629</b>
                   </div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/calendar.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     Monthly Payment:&nbsp; <b>$1,609</b></div>
-                  <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="./img/dot.svg" alt="sum"></span>
+                  <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/dot.svg" alt="sum"></span>
                     <div>Creditors: <b>Money Mart, CIBC, RBC, Rogers, Income Tax</b></div>
                   </div>
-                  <div> <img loading="lazy" class="icn" src="./img/user.svg" alt="">D.Craib <br><small> – North York,
+                  <div> <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/user.svg" alt="">D.Craib <br><small> – North York,
                       ON</small>
                   </div>
                 </section>
@@ -533,19 +533,19 @@
                 <div class="before-card after-card">
                   <div class="fs-5 fw-bold mb-2">After</div>
                   <div class="d-flex align-items-center mb-2"><span>
-                      <img loading="lazy" class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
+                      <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
                     <b> $18,000</b>
                   </div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/calendar.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     New Monthly Payment:&nbsp; <b> $300</b></div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/money-bag.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
                     Total Savings:&nbsp; <b> $35,629</b></div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/low-price.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
                     Debt Reduction:&nbsp; <b> 66.5%</b></div>
-                  <img loading="lazy" class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
+                  <img loading="lazy" class="logo mt-2 float-end" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="">
                 </div>
               </div>
             </li>
@@ -555,16 +555,16 @@
                 <section class="before-card m-3">
                   <div class="fs-5 fw-bold mb-2">Before</div>
                   <div class="d-flex align-items-center mb-2"><span>
-                      <img loading="lazy" class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
+                      <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
                     <b> $38,549</b>
                   </div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/calendar.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     Monthly Payment:&nbsp; <b>$1,154</b></div>
-                  <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="./img/dot.svg" alt="sum"></span>
+                  <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/dot.svg" alt="sum"></span>
                     <div>Creditors: <b>TD, The Brick, BMO, PC Financial, Walmart</b></div>
                   </div>
-                  <div> <img loading="lazy" class="icn" src="./img/user.svg" alt="">M.Elenor <br><small> – Scarborough,
+                  <div> <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/user.svg" alt="">M.Elenor <br><small> – Scarborough,
                       ON</small>
                   </div>
                 </section>
@@ -572,19 +572,19 @@
                 <div class="before-card after-card">
                   <div class="fs-5 fw-bold mb-2">After</div>
                   <div class="d-flex align-items-center mb-2"><span>
-                      <img loading="lazy" class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
+                      <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
                     <b> $7,500</b>
                   </div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/calendar.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     New Monthly Payment:&nbsp; <b> $125</b></div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/money-bag.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
                     Total Savings:&nbsp; <b> $12,223</b></div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/low-price.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
                     Debt Reduction:&nbsp; <b> 62%</b></div>
-                  <img loading="lazy" class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
+                  <img loading="lazy" class="logo mt-2 float-end" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="">
                 </div>
               </div>
             </li>
@@ -594,16 +594,16 @@
                 <section class="before-card m-3">
                   <div class="fs-5 fw-bold mb-2">Before</div>
                   <div class="d-flex align-items-center mb-2"><span>
-                      <img loading="lazy" class="icn" src="./img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
+                      <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
                     <b> $86,549</b>
                   </div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/calendar.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     Monthly Payment:&nbsp; <b>$2,139</b></div>
-                  <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="./img/dot.svg" alt="sum"></span>
+                  <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/dot.svg" alt="sum"></span>
                     <div>Creditors: <b>RBC, Fairstone, Money Mart, CIBC, Student Loan</b></div>
                   </div>
-                  <div> <img loading="lazy" class="icn" src="./img/user.svg" alt="">M.Quennell <br><small> – Toronto, ON
+                  <div> <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/user.svg" alt="">M.Quennell <br><small> – Toronto, ON
                     </small>
                   </div>
                 </section>
@@ -611,19 +611,19 @@
                 <div class="before-card after-card">
                   <div class="fs-5 fw-bold mb-2">After</div>
                   <div class="d-flex align-items-center mb-2"><span>
-                      <img loading="lazy" class="icn" src="./img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
+                      <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
                     <b> $16,200</b>
                   </div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/calendar.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     New Monthly Payment:&nbsp; <b>$270</b></div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/money-bag.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
                     Total Savings:&nbsp; <b> $70,349</b></div>
                   <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="./img/low-price.svg" alt="sum"></span>
+                        src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
                     Debt Reduction:&nbsp; <b>81.2%</b></div>
-                  <img loading="lazy" class="logo mt-2 float-end" src="./img/CredencenewLogo-6.png" alt="">
+                  <img loading="lazy" class="logo mt-2 float-end" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="">
                 </div>
               </div>
             </li>
@@ -655,7 +655,7 @@
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="fcard mx-auto">
           <div class="f-icn">
-            <img loading="lazy" src="./img/secure.svg" alt="secure">
+            <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/secure.svg" alt="secure">
             <span></span>
           </div>
           <h4 class="mt-3 fw-bold txt-blue">No Large Upfront Fee</h4>
@@ -665,7 +665,7 @@
       <div class="col-lg-4 col-md-6 col-sm-12 mt--160">
         <div class="fcard mx-md-0 mx-auto">
           <div class="f-icn">
-            <img loading="lazy" src="./img/downpay.svg" alt="secure">
+            <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/downpay.svg" alt="secure">
             <span></span>
           </div>
           <h4 class="mt-3 fw-bold txt-blue">One low monthly payment for all debts</h4>
@@ -675,7 +675,7 @@
       <div class="col-lg-4 col-md-6 col-sm-12 mt--260">
         <div class="fcard mx-md-0 mx-auto">
           <div class="f-icn">
-            <img loading="lazy" src="./img/statistics.svg" alt="secure">
+            <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/statistics.svg" alt="secure">
             <span></span>
           </div>
           <h4 class="mt-3 fw-bold txt-blue">Fast Pay-off plans (24-60 months)</h4>
@@ -688,7 +688,7 @@
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="fcard mx-auto">
           <div class="f-icn">
-            <img loading="lazy" src="./img/percentage.svg" alt="secure">
+            <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/percentage.svg" alt="secure">
             <span></span>
           </div>
           <h4 class="mt-3 fw-bold txt-blue">Waived Interest Rates</h4>
@@ -698,7 +698,7 @@
       <div class="col-lg-4 col-md-6 col-sm-12 mt--160">
         <div class="fcard mx-md-0 mx-auto">
           <div class="f-icn">
-            <img loading="lazy" src="./img/consultant.svg" alt="secure">
+            <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/consultant.svg" alt="secure">
             <span></span>
           </div>
           <h4 class="mt-3 fw-bold txt-blue">Free Confidential Consultation</h4>
@@ -709,7 +709,7 @@
       <div class="col-lg-4 col-md-6 col-sm-12 mt--260">
         <div class="fcard mx-md-0 mx-auto">
           <div class="f-icn">
-            <img loading="lazy" src="./img/rating.svg" alt="secure">
+            <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/rating.svg" alt="secure">
             <span></span>
           </div>
           <h4 class="mt-3 fw-bold txt-blue">Guaranteed Customer Satisfaction</h4>
@@ -722,12 +722,12 @@
   <div class="blob5"></div>
 
   <footer>
-    <img loading="lazy" src="./img/wave.svg" alt=" credence cr footer">
+    <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/wave.svg" alt=" credence cr footer">
     <div class="footer overflow-hidden">
-      <div class="lg mx-auto my-3"><img loading="lazy" src="./img/CredencenewLogo-6.png" alt="logo credence credit">
+      <div class="lg mx-auto my-3"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="logo credence credit">
       </div>
       <div class="text-center my-3">
-        <img loading="lazy" height="18" class="mx-1" src="./img/loc.svg" alt="credence credit phone">
+        <img loading="lazy" height="18" class="mx-1" src="<?php echo get_template_directory_uri() ?>/img/loc.svg" alt="credence credit phone">
         <a class="text-decoration-none text-white"
           href="https://www.google.com/maps/dir//credence+credit+25+sheppard+avenue/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x882b2d649fc692f1:0xb908633c2fb0d80c?sa=X&ved=2ahUKEwig8qOwxY7uAhUD63MBHer7DaYQ9RcwC3oECBYQBA"
           target="_blank" rel="noopener noreferrer">
@@ -735,7 +735,7 @@
         </a>
       </div>
       <div class="text-center">
-        <img loading="lazy" height="18" class="mx-1" src="./img/phone-call.svg" alt="credence credit phone">
+        <img loading="lazy" height="18" class="mx-1" src="<?php echo get_template_directory_uri() ?>/img/phone-call.svg" alt="credence credit phone">
         <a class="text-decoration-none text-white" href="tel:647 352 3328" target="_blank" rel="noopener noreferrer">
           647 352 3328
         </a>
@@ -744,21 +744,21 @@
         <div class="col-lg-3 col-md-4 col-sm-8 col-8 my-5">
           <div class="d-flex justify-content-between">
             <div class="social"><a target="_blank" rel="noopener noreferrer"
-                href="https://www.facebook.com/credencecredit/"><img loading="lazy" src="./img/facebook.svg"
+                href="https://www.facebook.com/credencecredit/"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/facebook.svg"
                   alt="social"></a></div>
             <div class="social"><a target="_blank" rel="noopener noreferrer"
-                href="https://www.linkedin.com/company/credence-credit"><img loading="lazy" src="./img/linkedin.svg"
+                href="https://www.linkedin.com/company/credence-credit"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/linkedin.svg"
                   alt="social"></a>
             </div>
             <div class="social"><a target="_blank" rel="noopener noreferrer"
-                href="https://twitter.com/credencecredit"><img loading="lazy" src="./img/twitter.svg" alt="social"></a>
+                href="https://twitter.com/credencecredit"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/twitter.svg" alt="social"></a>
             </div>
             <div class="social"><a target="_blank" rel="noopener noreferrer"
                 href="https://www.instagram.com/explore/locations/1900159150286258/credence-credit"><img loading="lazy"
-                  src="./img/instagram.svg" alt="social"></a></div>
+                  src="<?php echo get_template_directory_uri() ?>/img/instagram.svg" alt="social"></a></div>
             <div class="social"><a target="_blank" rel="noopener noreferrer"
                 href="https://www.youtube.com/channel/UCdhmXBYgMByUvycPeVpcEXA"><img loading="lazy"
-                  src="./img/youtube.svg" alt="social"></a></div>
+                  src="<?php echo get_template_directory_uri() ?>/img/youtube.svg" alt="social"></a></div>
           </div>
         </div>
       </div>
@@ -777,9 +777,9 @@
     crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/rangeable@latest/dist/rangeable.min.js"></script>
-  <script src="./assets/js/splide.min.js"></script>
+  <script src="<?php echo get_template_directory_uri() ?>/assets/js/splide.min.js"></script>
 
-  <script src="./assets/js/init.js"></script>
+  <script src="<?php echo get_template_directory_uri() ?>/assets/js/init.js"></script>
 </body>
 
 </html>

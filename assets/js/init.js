@@ -15,7 +15,7 @@ function calcFormSubmit(event) {
   data.lastName = formdata.get('lname')
   data.email = formdata.get('email')
   data.phone = formdata.get('phone')
-  data.amount = amount.innerHTML
+  data.amount = amount.value
   data.reduceAmount = reduceAmount.innerHTML
   data.monthlyAmount = monthlyAmount.innerHTML
   data.duration = duration.innerHTML
@@ -32,7 +32,7 @@ function calcFormSubmit(event) {
     mode: 'cors',
     body: formdata
   });
-  console.log(data)
+  // console.log(data)
   slideChange('+1')
 }
 
