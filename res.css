@@ -12,14 +12,19 @@
   .main-bg {
     background-size: 150vw;
   }
-  .mt--160,.mt--260{
+  .mt--160,
+  .mt--260 {
     margin-top: 0;
   }
-  .fcard{
+  .fcard {
     margin-top: 30px;
   }
-  .mt-130{
+  .mt-130 {
     margin-top: 20px;
+  }
+  .blob3 {
+    background-size: 559px;
+    background-position: -317px -162px;
   }
 }
 
@@ -37,7 +42,9 @@
   .main-bg {
     background-size: 170vw;
   }
-  
+  .blob3 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 610px) {
