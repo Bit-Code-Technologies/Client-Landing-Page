@@ -20,7 +20,7 @@
     margin-top: 30px;
   }
   .mt-130 {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .blob3 {
     background-size: 559px;
@@ -29,6 +29,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .calc{
+    margin-top: 35px;
+  }
   .blob2 {
     opacity: 0.1;
   }

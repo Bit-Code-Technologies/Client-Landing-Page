@@ -46,7 +46,7 @@
             <p class="main-sub">Enter your unsecured debt amount and see what you
               can save.</p>
 
-            <section id="calc" class="calc m-xl-0  m-auto overflow-auto">
+            <section id="calc" class="calc m-xl-0  mx-auto overflow-auto">
               <div class="d-flex justify-content-center mt-3">
                 <div class="step d-flex align-items-center active">
                   <div>
@@ -129,19 +129,19 @@
                     </li>
 
 
-                    <li class="splide__slide">
+                    <li class="splide__slide text-start">
                       <form onsubmit="calcFormSubmit(event)">
                         <div class="mx-3">
-                          <div class="fs-4 fw-bold txt-blue text-center">TO OBTAIN YOUR FREE ESTIMATE, FILL-IN THE
+                          <div class="fs-4 fw-bold txt-blue text-center mb-3">TO OBTAIN YOUR FREE ESTIMATE, FILL-IN THE
                             BELOW FORM…
                           </div>
                           <div class="d-flex justify-content-between">
-                            <div class="mb-2">
+                            <div class="mb-2 mr-2">
                               <label for="fname" class="form-label txt-blue">First Name</label>
                               <input required type="text" class="form-control rounded-pill" id="fname" name="fname"
                                 placeholder="First Name">
                             </div>
-                            <div class="mb-2">
+                            <div class="mb-2 ml-2">
                               <label for="lname" class="form-label txt-blue">Last Name</label>
                               <input required type="text" class="form-control rounded-pill" id="lname" name="lname"
                                 placeholder="Last Name">
@@ -161,7 +161,7 @@
                         <div class="d-flex mt-3">
                           <button type="button" onclick="slideChange('-1')"
                             class="btn btn-outline-danger rounded-pill w-100 mx-3">Previous</button>
-                          <button onclick="slideChange('+1')" class="btn btn-red rounded-pill w-100 mx-3"
+                          <button class="btn btn-red rounded-pill w-100 mx-3"
                             type="submit">Submit</button>
                         </div>
                       </form>
@@ -465,7 +465,7 @@
   <div class="blob4 blob "></div>
 
   <h2 class="text-center txt-red fw-bold my-5">RECENT SETTLEMENTS</h2>
-  <div class="row justify-content-center position-relative mx-auto">
+  <div class="row justify-content-center position-relative mx-auto position-relative">
     <div class="blob1  blob "></div>
     <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-sm-12">
       <div class="splide review-second mx-auto">
@@ -636,7 +636,7 @@
 
   <br>
   <br>
-  <div class="row justify-content-center my-5">
+  <div class="row justify-content-center my-4">
     <div class="col-8 col-md-4">
       <a href="#calc" class="btn btn-red text-white btn-lg rounded-pill fw-bold shadow w-100 py-3">GET FREE CONSULT</a>
     </div>

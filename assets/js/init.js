@@ -20,11 +20,10 @@ function calcFormSubmit(event) {
   data.monthlyAmount = monthlyAmount.innerHTML
   data.duration = duration.innerHTML
   data.monthlyIncome = monthlyIcome.value
-  formdata.append("reduceAmount", data.reduceAmount);
-  formdata.append("monthlyAmount", data.monthlyAmount);
-  formdata.append("duration", data.duration);
-  formdata.append("monthlyIncome", data.monthlyIncome);
-
+  formdata.append("reduceAmount", data.reduceAmount)
+  formdata.append("monthlyAmount", data.monthlyAmount)
+  formdata.append("duration", data.duration)
+  formdata.append("monthlyIncome", data.monthlyIncome)
 
   const url = "https://debtfreelife.ccredit.ca/wp-admin/admin-ajax.php?action=bitconnectzcrm_save_data"
   const response = fetch(url, {

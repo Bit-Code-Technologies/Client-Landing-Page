@@ -385,3 +385,12 @@ header {
 .lg img {
   height: 50px;
 }
+.splide__pagination {
+  top: 100%;
+}
+.ml-2 {
+  margin-left: 10px;
+}
+.mr-2 {
+  margin-right: 10px;
+}
