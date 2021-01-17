@@ -10,12 +10,11 @@
   <meta name="description" content="credence credit">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <meta name="theme-color" content="#012b42">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/res.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/splide.min.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/themes/splide-default.min.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/rangable.css">
@@ -25,9 +24,9 @@
 <body>
   <header class="d-flex justify-content-between align-items-center">
     <a href="/">
-      <img loading="lazy" class="logo" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="Credence credit logo">
+      <img id="top-logo" loading="lazy" class="logo" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="Credence credit logo">
     </a>
-    <a class="text-decoration-none text-white" href="tel:647 352 3328" target="_blank" rel="noopener noreferrer">
+    <a id="tel" class="text-decoration-none text-white" href="tel:647 352 3328" target="_blank" rel="noopener noreferrer">
       <div class="call d-flex align-items-center">
         <span class="icn-wrp d-flex align-items-center justify-content-center">
           <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/phone-call.svg" alt="credence credit call">
@@ -35,142 +34,140 @@
         <span class="mx-2 ">647 352 3328</span>
       </div>
     </a>
+    <button data-bs-toggle="modal" data-bs-target="#form" class="top-bar-btn shadow-sm">Book Free Consulstation</button>
   </header>
+
+  <div id="call-btn" class="d-flex d-sm-none justify-content-center align-items-center">
+    <div class="request-loader"></div>
+    <a id="tel" class="text-decoration-none text-white" href="tel:647 352 3328" target="_blank" rel="noopener noreferrer">
+      <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/phone-call.svg" alt="credence credit call">
+    </a>
+  </div>
 
   <section class="main">
     <div class="main-bg">
       <div class="container">
         <div class="row">
           <div class="col-xl-7 text-xl-start text-center p-lg-5">
-            <h1 class="main-h mt-xl-0 mt-2">Reduce your debts by up to 80%</h1>
-            <p class="main-sub">Enter your unsecured debt amount and see what you
-              can save.</p>
+            <section id="calculation">
+              <h1 class="main-h mt-xl-0 mt-2">Reduce your debts by up to 80%</h1>
+              <p class="main-sub">Enter your unsecured debt amount and see what you
+                can save.</p>
 
-            <section id="calc" class="calc m-xl-0  mx-auto overflow-auto">
-              <div class="d-flex justify-content-center mt-3">
-                <div class="step d-flex align-items-center active">
-                  <div>
-                    <span class="num">1</span>
+              <div id="calc" class="calc m-xl-0  mx-auto overflow-auto">
+                <div class="d-flex justify-content-center mt-3">
+                  <div class="step d-flex align-items-center active">
+                    <div>
+                      <span class="num">1</span>
+                    </div>
+                    <span class="line"></span>
                   </div>
-                  <span class="line"></span>
+                  <div id="step-2" class="step d-flex align-items-center">
+                    <span class="num">2</span>
+                    <!-- <span class="line"></span> -->
+                  </div>
+                  <!-- <div id="step-3" class="step d-flex align-items-center">
+                    <span class="num">3</span>
+                  </div> -->
                 </div>
-                <div id="step-2" class="step d-flex align-items-center">
-                  <span class="num">2</span>
-                  <span class="line"></span>
-                </div>
-                <div id="step-3" class="step d-flex align-items-center">
-                  <span class="num">3</span>
-                </div>
-              </div>
-              <div class="splide calc-slider">
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <div class="text-primary mt-3 text-center fw-bold fs-3">DO YOU QUALIFY?</div>
-                      <p class="txt-blue text-center">Get a Free Estimate Today!</p>
-                      <div class="mx-3">
-                        <input title="amount range" id="range" type="text">
-                        <div class="d-flex justify-content-between">
-                          <span class="txt-blue">$5000</span>
-                          <span class="txt-blue">$100,000</span>
-                        </div>
-                        <br>
-                        <div class="mx-2 txt-blue"><label for="amount">Amount</label></div>
-                        <input value="24000" id="amount" class="form-control rounded-pill" type="text">
-                        <div class="mt-2 text-start">
-                          <div class="form-check">
-                            <input checked onclick="return false;" class="form-check-input" type="checkbox" value=""
-                              id="c1">
-                            <label class="form-check-label txt-blue" for="c1">
-                              Reduce it to <span class="fs-5 text-primary fw-bold">$<span
-                                  id="reduce-amount">8000</span></span>
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input checked onclick="return false;" class="form-check-input" type="checkbox" value=""
-                              id="c2">
-                            <label class="form-check-label txt-blue" for="c2">
-                              Your monthly payments will be <span class="fs-5 text-primary fw-bold">$<span
-                                  id="mon">200</span></span> for <span class="fs-5 text-primary fw-bold"><span
-                                  id="duration">40</span></span>
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input checked onclick="return false;" class="form-check-input" type="checkbox" value=""
-                              id="c3">
-                            <label class="form-check-label txt-blue" for="c3">
-                              Interest will be zero
-                            </label>
-                          </div>
-                        </div>
-                        <button onclick="slideChange('+1')" class="btn btn-red shadow rounded-pill w-100 my-2">Get
-                          Started</button>
-                      </div>
-                    </li>
-
-
-                    <li class="splide__slide">
-                      <section>
-                        <div class="fs-3 text-primary mt-3 text-center fw-bold">DO YOU QUALIFY?</div>
+                <div class="splide calc-slider">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="text-primary mt-3 text-center fw-bold fs-3">DO YOU QUALIFY?</div>
                         <p class="txt-blue text-center">Get a Free Estimate Today!</p>
-                      </section>
-                      <div class="mx-4">
-                        <div class="fw-bold fs-3 txt-blue text-center"><label for="monthly-income">Monthly take home
-                            income</label>
-                        </div>
-                        <input id="monthly-income" type="text" class="form-control rounded-pill" placeholder="$5000"
-                          value="5000">
-                        <div class="d-flex mt-5">
-                          <button onclick="slideChange('-1')"
-                            class="btn btn-outline-danger rounded-pill w-100 mx-2">Previous</button>
-                          <button onclick="slideChange('+1')" class="btn btn-red rounded-pill w-100 mx-2">Next</button>
-                        </div>
-                      </div>
-                    </li>
-
-
-                    <li class="splide__slide text-start">
-                      <form onsubmit="calcFormSubmit(event)">
                         <div class="mx-3">
-                          <div class="fs-4 fw-bold txt-blue text-center mb-3">TO OBTAIN YOUR FREE ESTIMATE, FILL-IN THE
-                            BELOW FORM…
-                          </div>
+                          <input title="amount range" id="range" type="text">
                           <div class="d-flex justify-content-between">
-                            <div class="mb-2 mr-2">
-                              <label for="fname" class="form-label txt-blue">First Name</label>
-                              <input required type="text" class="form-control rounded-pill" id="fname" name="fname"
-                                placeholder="First Name">
+                            <span class="txt-blue">$5000</span>
+                            <span class="txt-blue">$100,000</span>
+                          </div>
+                          <br>
+                          <div class="mx-2 txt-blue"><label for="amount">Amount</label></div>
+                          <input value="24000" id="amount" class="form-control rounded-pill" type="text">
+                          <div class="mt-2 text-start">
+                            <div class="form-check">
+                              <input checked onclick="return false;" class="form-check-input" type="checkbox" value="" id="c1">
+                              <label class="form-check-label txt-blue" for="c1">
+                                Reduce it to <span class="fs-5 text-primary fw-bold">$<span id="reduce-amount">8000</span></span>
+                              </label>
                             </div>
-                            <div class="mb-2 ml-2">
-                              <label for="lname" class="form-label txt-blue">Last Name</label>
-                              <input required type="text" class="form-control rounded-pill" id="lname" name="lname"
-                                placeholder="Last Name">
+                            <div class="form-check">
+                              <input checked onclick="return false;" class="form-check-input" type="checkbox" value="" id="c2">
+                              <label class="form-check-label txt-blue" for="c2">
+                                Your monthly payments will be <span class="fs-5 text-primary fw-bold">$<span id="mon">200</span></span> for <span class="fs-5 text-primary fw-bold"><span id="duration">40</span></span>
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input checked onclick="return false;" class="form-check-input" type="checkbox" value="" id="c3">
+                              <label class="form-check-label txt-blue" for="c3">
+                                Interest will be zero
+                              </label>
                             </div>
                           </div>
-                          <div class="mb-2">
-                            <label for="email" class="form-label txt-blue">Email</label>
-                            <input required type="email" class="form-control rounded-pill" id="email" name="email"
-                              placeholder="example@mail.com">
+                          <button onclick="slideChange('+1')" class="btn btn-red shadow rounded-pill w-100 my-2">Get
+                            Started</button>
+                        </div>
+                      </li>
+
+
+                      <!--  <li class="splide__slide">
+                        <section>
+                          <div class="fs-3 text-primary mt-3 text-center fw-bold">DO YOU QUALIFY?</div>
+                          <p class="txt-blue text-center">Get a Free Estimate Today!</p>
+                        </section>
+                        <div class="mx-4">
+                          <div class="fw-bold fs-3 txt-blue text-center"><label for="monthly-income">Monthly take home
+                              income</label>
                           </div>
-                          <div class="mb-2">
-                            <label for="phone" class="form-label txt-blue">Phone</label>
-                            <input required type="phone" class="form-control rounded-pill" id="phone" name="phone"
-                              placeholder="Phone">
+                          <input id="monthly-income" type="text" class="form-control rounded-pill" placeholder="$5000"
+                            value="5000">
+                          <div class="d-flex mt-5">
+                            <button onclick="slideChange('-1')"
+                              class="btn btn-outline-danger rounded-pill w-100 mx-2">Previous</button>
+                            <button onclick="slideChange('+1')" class="btn btn-red rounded-pill w-100 mx-2">Next</button>
                           </div>
                         </div>
-                        <div class="d-flex mt-3">
-                          <button type="button" onclick="slideChange('-1')"
-                            class="btn btn-outline-danger rounded-pill w-100 mx-3">Previous</button>
-                          <button class="btn btn-red rounded-pill w-100 mx-3"
-                            type="submit">Submit</button>
-                        </div>
-                      </form>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="fs-4 fw-bold text-center txt-blue mt-5">Your data successfully submitted.</div>
-                      <div class="fs-5 fw-bold text-center txt-blue">Thank You.</div>
-                    </li>
-                  </ul>
+                      </li> -->
+
+
+                      <li class="splide__slide text-start">
+                        <form onsubmit="calcFormSubmit(event)">
+                          <div class="mx-3">
+                            <div class="fs-4 fw-bold txt-blue text-center mb-3">TO OBTAIN YOUR FREE ESTIMATE, FILL-IN THE
+                              BELOW FORM…
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <div class="mb-2 mr-2">
+                                <label for="fname" class="form-label txt-blue">First Name</label>
+                                <input required type="text" class="form-control rounded-pill" id="fname" name="fname" placeholder="First Name">
+                              </div>
+                              <div class="mb-2 ml-2">
+                                <label for="lname" class="form-label txt-blue">Last Name</label>
+                                <input required type="text" class="form-control rounded-pill" id="lname" name="lname" placeholder="Last Name">
+                              </div>
+                            </div>
+                            <div class="mb-2">
+                              <label for="email" class="form-label txt-blue">Email</label>
+                              <input required type="email" class="form-control rounded-pill" id="email" name="email" placeholder="example@mail.com">
+                            </div>
+                            <div class="mb-2">
+                              <label for="phone" class="form-label txt-blue">Phone</label>
+                              <input required type="phone" class="form-control rounded-pill" id="phone" name="phone" placeholder="Phone">
+                            </div>
+                          </div>
+                          <div class="d-flex mt-3">
+                            <button type="button" onclick="slideChange('-1')" class="btn btn-outline-danger rounded-pill w-100 mx-3">Previous</button>
+                            <button class="btn btn-red rounded-pill w-100 mx-3" type="submit">Submit</button>
+                          </div>
+                        </form>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="fs-4 fw-bold text-center txt-blue mt-5">Your data successfully submitted.</div>
+                        <div class="fs-5 fw-bold text-center txt-blue">Thank You.</div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </section>
@@ -212,6 +209,133 @@
     </div>
     <br>
     <br>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <section id="calc2" class="m-xl-0 mx-auto overflow-auto">
+            <div class="d-flex justify-content-center mt-3">
+              <div class="step d-flex align-items-center active">
+                <div>
+                  <span class="num">1</span>
+                </div>
+                <span class="line"></span>
+              </div>
+              <div id="step-2-2" class="step d-flex align-items-center">
+                <span class="num">2</span>
+                <!-- <span class="line"></span> -->
+              </div>
+              <!-- <div id="step-3" class="step d-flex align-items-center">
+                    <span class="num">3</span>
+                  </div> -->
+            </div>
+            <div class="splide calc-slider-2">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="text-primary mt-3 text-center fw-bold fs-3">DO YOU QUALIFY?</div>
+                    <p class="txt-blue text-center">Get a Free Estimate Today!</p>
+                    <div class="mx-3">
+                      <input title="your amount range" id="range2" type="text">
+                      <div class="d-flex justify-content-between">
+                        <span class="txt-blue">$5000</span>
+                        <span class="txt-blue">$100,000</span>
+                      </div>
+                      <br>
+                      <div class="mx-2 txt-blue"><label for="amount">Amount</label></div>
+                      <input value="24000" id="amount2" class="form-control rounded-pill" type="text">
+                      <div class="mt-2 text-start">
+                        <div class="form-check">
+                          <input checked onclick="return false;" class="form-check-input" type="checkbox" value="" id="c1">
+                          <label class="form-check-label txt-blue" for="c1">
+                            Reduce it to <span class="fs-5 text-primary fw-bold">$<span id="reduce-amount-2">8000</span></span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input checked onclick="return false;" class="form-check-input" type="checkbox" value="" id="c2">
+                          <label class="form-check-label txt-blue" for="c2">
+                            Your monthly payments will be <span class="fs-5 text-primary fw-bold">$<span id="mon-2">200</span></span> for <span class="fs-5 text-primary fw-bold"><span id="duration-2">40</span></span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input checked onclick="return false;" class="form-check-input" type="checkbox" value="" id="c3">
+                          <label class="form-check-label txt-blue" for="c3">
+                            Interest will be zero
+                          </label>
+                        </div>
+                      </div>
+                      <button onclick="slideChange('+1',true)" class="btn btn-red shadow rounded-pill w-100 my-2">Get
+                        Started</button>
+                    </div>
+                  </li>
+
+
+                  <!--  <li class="splide__slide">
+                        <section>
+                          <div class="fs-3 text-primary mt-3 text-center fw-bold">DO YOU QUALIFY?</div>
+                          <p class="txt-blue text-center">Get a Free Estimate Today!</p>
+                        </section>
+                        <div class="mx-4">
+                          <div class="fw-bold fs-3 txt-blue text-center"><label for="monthly-income">Monthly take home
+                              income</label>
+                          </div>
+                          <input id="monthly-income" type="text" class="form-control rounded-pill" placeholder="$5000"
+                            value="5000">
+                          <div class="d-flex mt-5">
+                            <button onclick="slideChange('-1')"
+                              class="btn btn-outline-danger rounded-pill w-100 mx-2">Previous</button>
+                            <button onclick="slideChange('+1')" class="btn btn-red rounded-pill w-100 mx-2">Next</button>
+                          </div>
+                        </div>
+                      </li> -->
+
+
+                  <li class="splide__slide text-start">
+                    <form onsubmit="calcFormSubmit(event,true)">
+                      <div class="mx-3">
+                        <div class="fs-4 fw-bold txt-blue text-center mb-3">TO OBTAIN YOUR FREE ESTIMATE, FILL-IN THE
+                          BELOW FORM…
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="mb-2 mr-2">
+                            <label for="fname" class="form-label txt-blue">First Name</label>
+                            <input required type="text" class="form-control rounded-pill" id="fname" name="fname" placeholder="First Name">
+                          </div>
+                          <div class="mb-2 ml-2">
+                            <label for="lname" class="form-label txt-blue">Last Name</label>
+                            <input required type="text" class="form-control rounded-pill" id="lname" name="lname" placeholder="Last Name">
+                          </div>
+                        </div>
+                        <div class="mb-2">
+                          <label for="email" class="form-label txt-blue">Email</label>
+                          <input required type="email" class="form-control rounded-pill" id="email" name="email" placeholder="example@mail.com">
+                        </div>
+                        <div class="mb-2">
+                          <label for="phone" class="form-label txt-blue">Phone</label>
+                          <input required type="phone" class="form-control rounded-pill" id="phone" name="phone" placeholder="Phone">
+                        </div>
+                      </div>
+                      <div class="d-flex mt-3">
+                        <button type="button" onclick="slideChange('-1',true)" class="btn btn-outline-danger rounded-pill w-100 mx-3">Previous</button>
+                        <button class="btn btn-red rounded-pill w-100 mx-3" type="submit">Submit</button>
+                      </div>
+                    </form>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="fs-4 fw-bold text-center txt-blue mt-5">Your data successfully submitted.</div>
+                    <div class="fs-5 fw-bold text-center txt-blue">Thank You.</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -480,8 +604,7 @@
                       <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
                     <b> $19,723</b>
                   </div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     Monthly Payment:&nbsp; <b>$654</b></div>
                   <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/dot.svg" alt="sum"></span>
                     <div>Creditors: <b>TD Canadian Tire, Easy Financial, Scotiabank</b></div>
@@ -497,14 +620,11 @@
                       <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
                     <b> $7,500</b>
                   </div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     New Monthly Payment:&nbsp; <b> $125</b></div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
                     Total Savings:&nbsp; <b> $12,223</b></div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
                     Debt Reduction:&nbsp; <b> 62%</b></div>
                   <img loading="lazy" class="logo mt-2 float-end" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="">
                 </div>
@@ -519,8 +639,7 @@
                       <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
                     <b> $53,629</b>
                   </div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     Monthly Payment:&nbsp; <b>$1,609</b></div>
                   <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/dot.svg" alt="sum"></span>
                     <div>Creditors: <b>Money Mart, CIBC, RBC, Rogers, Income Tax</b></div>
@@ -536,14 +655,11 @@
                       <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
                     <b> $18,000</b>
                   </div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     New Monthly Payment:&nbsp; <b> $300</b></div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
                     Total Savings:&nbsp; <b> $35,629</b></div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
                     Debt Reduction:&nbsp; <b> 66.5%</b></div>
                   <img loading="lazy" class="logo mt-2 float-end" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="">
                 </div>
@@ -558,8 +674,7 @@
                       <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
                     <b> $38,549</b>
                   </div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     Monthly Payment:&nbsp; <b>$1,154</b></div>
                   <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/dot.svg" alt="sum"></span>
                     <div>Creditors: <b>TD, The Brick, BMO, PC Financial, Walmart</b></div>
@@ -575,14 +690,11 @@
                       <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
                     <b> $7,500</b>
                   </div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     New Monthly Payment:&nbsp; <b> $125</b></div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
                     Total Savings:&nbsp; <b> $12,223</b></div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
                     Debt Reduction:&nbsp; <b> 62%</b></div>
                   <img loading="lazy" class="logo mt-2 float-end" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="">
                 </div>
@@ -597,8 +709,7 @@
                       <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span> Total Debt: &nbsp;
                     <b> $86,549</b>
                   </div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     Monthly Payment:&nbsp; <b>$2,139</b></div>
                   <div class="d-flex mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/dot.svg" alt="sum"></span>
                     <div>Creditors: <b>RBC, Fairstone, Money Mart, CIBC, Student Loan</b></div>
@@ -614,14 +725,11 @@
                       <img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/sum.svg" alt="sum"></span>Settlement Amount &nbsp;
                     <b> $16,200</b>
                   </div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/calendar.svg" alt="sum"></span>
                     New Monthly Payment:&nbsp; <b>$270</b></div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/money-bag.svg" alt="sum"></span>
                     Total Savings:&nbsp; <b> $70,349</b></div>
-                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn"
-                        src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
+                  <div class="d-flex align-items-center mb-2"><span><img loading="lazy" class="icn" src="<?php echo get_template_directory_uri() ?>/img/low-price.svg" alt="sum"></span>
                     Debt Reduction:&nbsp; <b>81.2%</b></div>
                   <img loading="lazy" class="logo mt-2 float-end" src="<?php echo get_template_directory_uri() ?>/img/CredencenewLogo-6.png" alt="">
                 </div>
@@ -638,7 +746,7 @@
   <br>
   <div class="row justify-content-center my-4">
     <div class="col-8 col-md-4">
-      <a href="#calc" class="btn btn-red text-white btn-lg rounded-pill fw-bold shadow w-100 py-3">GET FREE CONSULT</a>
+      <a href="#calculation" class="btn btn-red text-white btn-lg rounded-pill fw-bold shadow w-100 py-3">GET FREE CONSULT</a>
     </div>
   </div>
   <br>
@@ -719,6 +827,14 @@
     </div>
   </div>
 
+  <br>
+  <br>
+  <div class="row justify-content-center my-4">
+    <div class="col-8 col-md-4">
+      <a href="#calculation" class="btn btn-red text-white btn-lg rounded-pill fw-bold shadow w-100 py-2 ">Apply Now</a>
+    </div>
+  </div>
+
   <div class="blob5"></div>
 
   <footer>
@@ -728,10 +844,9 @@
       </div>
       <div class="text-center my-3">
         <img loading="lazy" height="18" class="mx-1" src="<?php echo get_template_directory_uri() ?>/img/loc.svg" alt="credence credit phone">
-        <a class="text-decoration-none text-white"
-          href="https://www.google.com/maps/dir//credence+credit+25+sheppard+avenue/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x882b2d649fc692f1:0xb908633c2fb0d80c?sa=X&ved=2ahUKEwig8qOwxY7uAhUD63MBHer7DaYQ9RcwC3oECBYQBA"
-          target="_blank" rel="noopener noreferrer">
-          300-25 Sheppard Ave <br> W North York Industiral,<br> ON, Canada M2N 6S8
+        <a class="text-decoration-none text-white" href="https://www.google.com/maps/dir//credence+credit+25+sheppard+avenue/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x882b2d649fc692f1:0xb908633c2fb0d80c?sa=X&ved=2ahUKEwig8qOwxY7uAhUD63MBHer7DaYQ9RcwC3oECBYQBA" target="_blank" rel="noopener noreferrer">
+          Head Office: 300-25 Sheppard Ave W <br>
+          Toronto, ON, M2N 6S6
         </a>
       </div>
       <div class="text-center">
@@ -743,38 +858,26 @@
       <div class="row justify-content-center mb-2 mt-4">
         <div class="col-lg-3 col-md-4 col-sm-8 col-8 my-5">
           <div class="d-flex justify-content-between">
-            <div class="social"><a target="_blank" rel="noopener noreferrer"
-                href="https://www.facebook.com/credencecredit/"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/facebook.svg"
-                  alt="social"></a></div>
-            <div class="social"><a target="_blank" rel="noopener noreferrer"
-                href="https://www.linkedin.com/company/credence-credit"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/linkedin.svg"
-                  alt="social"></a>
+            <div class="social"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/credencecredit/"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/facebook.svg" alt="social"></a></div>
+            <div class="social"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/credence-credit"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/linkedin.svg" alt="social"></a>
             </div>
-            <div class="social"><a target="_blank" rel="noopener noreferrer"
-                href="https://twitter.com/credencecredit"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/twitter.svg" alt="social"></a>
+            <div class="social"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/credencecredit"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/twitter.svg" alt="social"></a>
             </div>
-            <div class="social"><a target="_blank" rel="noopener noreferrer"
-                href="https://www.instagram.com/explore/locations/1900159150286258/credence-credit"><img loading="lazy"
-                  src="<?php echo get_template_directory_uri() ?>/img/instagram.svg" alt="social"></a></div>
-            <div class="social"><a target="_blank" rel="noopener noreferrer"
-                href="https://www.youtube.com/channel/UCdhmXBYgMByUvycPeVpcEXA"><img loading="lazy"
-                  src="<?php echo get_template_directory_uri() ?>/img/youtube.svg" alt="social"></a></div>
+            <div class="social"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/explore/locations/1900159150286258/credence-credit"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/instagram.svg" alt="social"></a></div>
+            <div class="social"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCdhmXBYgMByUvycPeVpcEXA"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/youtube.svg" alt="social"></a></div>
           </div>
         </div>
       </div>
-      <div class="text-center my-3"><small><a target="_blank" rel="noopener noreferrer"
-            href="https://www.ccredit.ca/terms-of-services/">Terms of
+      <div class="text-center my-3"><small><a target="_blank" rel="noopener noreferrer" href="https://www.ccredit.ca/terms-of-services/">Terms of
             Use</a> | <a target="_blank" rel="noopener noreferrer" href="https://www.ccredit.ca/privacy-policy/">Privacy
             Policy</a></small></div>
-      <div class="text-center credit "><small>© 2019. All rights reserved Credence Credit owned by Credence Services
+      <div class="text-center credit "><small>© 2021. All rights reserved Credence Credit owned by Credence Services
           Inc</small></div>
       <br>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/rangeable@latest/dist/rangeable.min.js"></script>
   <script src="<?php echo get_template_directory_uri() ?>/assets/js/splide.min.js"></script>

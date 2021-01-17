@@ -29,7 +29,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .calc{
+  .calc {
     margin-top: 35px;
   }
   .blob2 {
@@ -68,6 +68,22 @@
 }
 
 @media screen and (max-width: 576px) {
+  #tel {
+    display: none;
+  }
+  .top-bar-btn {
+    display: inline-block;
+  }
+  header {
+    padding: 0 4%;
+    height: 50px;
+  }
+  .main {
+    margin-top: 50px;
+  }
+  #top-logo {
+    width: 88px;
+  }
   .calc {
     width: 95vw;
   }
@@ -78,4 +94,18 @@
   .main-bg {
     background-size: 180vw;
   }
+  .h-img-wrp {
+    width: 280px;
+    height: 280px;
+  }
+  .slide-item {
+    width: 290px;
+  }
+  .feature {
+    width: 120px;
+  }
+  .feature span {
+    font-size: 1rem !important;
+  }
+  
 }

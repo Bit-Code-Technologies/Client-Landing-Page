@@ -34,7 +34,14 @@ body {
 header {
   height: 70px;
   padding: 0 10%;
-  background: white;
+  background: #fffffff2;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  transition: all 0.4s;
+  box-shadow: 0 0 10px -7px gray;
 }
 .logo {
   width: 130px;
@@ -64,6 +71,9 @@ header {
   color: white;
   font-weight: 500;
 }
+.main {
+  margin-top: 69px;
+}
 .main-bg {
   background-size: 150vw;
   background-image: url(./img/shape.svg);
@@ -90,6 +100,34 @@ header {
   border-radius: 15px;
   box-shadow: 0 0 30px -13px black;
 }
+#calc2 {
+  width: 85vw;
+  background: #ffffff;
+  border-radius: 15px;
+  height: auto;
+  position: relative;
+}
+#calc2 .splide__slide {
+  width: 85vw;
+}
+#call-btn {
+  background: var(--blue);
+  position: fixed;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  left: -2px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px;
+  z-index: 999;
+}
+#call-btn a {
+  display: inline-block;
+}
+#call-btn img {
+  height: 30px;
+  width: 30px;
+}
 .h-img-wrp {
   background: url(./img/mom.jpg);
   background-size: 619.9px;
@@ -104,6 +142,12 @@ header {
 }
 .rating {
   margin: 20px;
+}
+.modal-close-btn {
+  right: 12px;
+  position: absolute;
+  top: 10px;
+  z-index: 999;
 }
 .rating span {
   font-weight: 500;
@@ -393,4 +437,109 @@ header {
 }
 .mr-2 {
   margin-right: 10px;
+}
+.top-bar-btn {
+  background-color: var(--red);
+  border-radius: 10px;
+  border: none;
+  padding: 7px 20px;
+  font-size: 13px;
+  display: none;
+}
+#form .modal-content {
+  border-radius: 15px;
+}
+
+.request-loader {
+  display: none;
+  z-index: -1;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+}
+.request-loader span {
+  position: relative;
+  font-size: 72px;
+  top: 5px;
+  left: -5px;
+}
+.request-loader::after {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 8px solid rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  -webkit-animation-name: ripple;
+  animation-name: ripple;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  z-index: -1;
+}
+.request-loader::before {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 8px solid rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  -webkit-animation-name: ripple;
+  animation-name: ripple;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  z-index: -1;
+}
+
+@-webkit-keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(1.5, 1.5, 1);
+  }
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(1.5, 1.5, 1);
+  }
 }
